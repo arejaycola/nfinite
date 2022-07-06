@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Content from './Content'
 import Header from './Header'
+import { StyledButton } from './StyledButton'
 
 const List = styled.ul`
   list-style: none;
@@ -16,22 +17,6 @@ const ListItem = styled.li`
   justify-content: space-between;
   border-bottom: 2px solid black;
   height: 50px;
-`
-
-const StyledButton = styled.button`
-  font-size: 18px;
-  margin-top: 20px;
-  padding: 10px 0px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  width: 100%;
-  background-color: #fbfbfb;
-  transition: all 0.1s ease-in-out;
-
-  &:hover:not(:disabled) {
-    cursor: pointer;
-    box-shadow: none;
-  }
 `
 
 const Results = () => {
